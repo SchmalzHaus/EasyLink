@@ -1,11 +1,11 @@
 06/27/2019 First version (v1) sent to JLC for fab
 06/29/2019 
 * After reviewing ST-LINK/V2-1 on Nucleo schematic and user guide, it appears that JP1 PWR_EXT (on PB3) should NOT be pulled up to 3V3, but rather should just be tied to GND. If high, it leaves USB power request at 100mA. If low, firmwawre asks PC for 300mA of USB current.
-* Turns out that ST-LINK firmware always outputs 8MHz on PA8 (MCO). Maybe, for next rev, terminate with 10K resistor to ground to reduce RF spew?
+* Turns out that ST-LINK firmware always outputs 8MHz on PA8 (MCO). Maybe, for next rev, terminate with 10K resistor to ground to reduce RF spew? (no, just leave open to save space)
 
 7/9/2019 Second version (v2)
 * No need for pull up on T_NRST (ST does not have this on their programmer)
-* Use edge based connector rather than right angle for v2 - need to make board thinner to accomodate this
-* Try to find thinner switch and put it on top side of board rather than bottom
+* Use edge based connector rather than right angle for v2 - need to make board thinner to accommodate this (done)
+* Try to find thinner switch and put it on top side of board rather than bottom (done)
 
 

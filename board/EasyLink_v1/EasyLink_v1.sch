@@ -5053,9 +5053,9 @@ Source: &lt;a href="https://www.ckswitches.com/media/1422/js.pdf"&gt; Datasheet 
 <instance part="GND17" gate="1" x="157.48" y="68.58" smashed="yes">
 <attribute name="VALUE" x="154.94" y="66.04" size="1.778" layer="96"/>
 </instance>
-<instance part="R21" gate="G$1" x="139.7" y="111.76" smashed="yes">
-<attribute name="NAME" x="135.89" y="113.2586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="135.89" y="108.458" size="1.778" layer="96"/>
+<instance part="R21" gate="G$1" x="147.32" y="111.76" smashed="yes">
+<attribute name="NAME" x="143.51" y="113.2586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="143.51" y="108.458" size="1.778" layer="96"/>
 </instance>
 <instance part="R22" gate="G$1" x="152.4" y="142.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="150.9014" y="138.43" size="1.778" layer="95" rot="R90"/>
@@ -5742,7 +5742,12 @@ Source: &lt;a href="https://www.ckswitches.com/media/1422/js.pdf"&gt; Datasheet 
 <segment>
 <pinref part="U1" gate="G$1" pin="PB12"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="111.76" x2="134.62" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="111.76" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="111.76" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="111.76" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
+<junction x="119.38" y="111.76"/>
+<wire x1="119.38" y1="114.3" x2="127" y2="114.3" width="0.1524" layer="91"/>
+<label x="127" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -5868,10 +5873,10 @@ Source: &lt;a href="https://www.ckswitches.com/media/1422/js.pdf"&gt; Datasheet 
 <net name="N$12" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB14"/>
-<wire x1="114.3" y1="106.68" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="106.68" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="106.68" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="111.76" x2="144.78" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
