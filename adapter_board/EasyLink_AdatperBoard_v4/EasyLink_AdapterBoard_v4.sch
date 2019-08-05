@@ -348,6 +348,26 @@
 <text x="-4.445" y="3.556" size="0.762" layer="21">1</text>
 <text x="-4.445" y="-4.191" size="0.762" layer="21">2</text>
 </package>
+<package name="ST_LINK_V3_DIRECT">
+<smd name="1" x="-3.81" y="2.9464" dx="0.7366" dy="4.0132" layer="1"/>
+<smd name="2" x="-3.81" y="-1.8669" dx="0.7366" dy="1.8542" layer="1"/>
+<smd name="3" x="-2.54" y="2.9464" dx="0.7366" dy="4.0132" layer="1"/>
+<smd name="4" x="-2.54" y="-1.8669" dx="0.7366" dy="1.8542" layer="1"/>
+<smd name="5" x="-1.27" y="2.9464" dx="0.7366" dy="4.0132" layer="1"/>
+<smd name="6" x="-1.27" y="-1.8669" dx="0.7366" dy="1.8542" layer="1"/>
+<smd name="7" x="0" y="2.9464" dx="0.7366" dy="4.0132" layer="1"/>
+<smd name="8" x="0" y="-1.8669" dx="0.7366" dy="1.8542" layer="1"/>
+<smd name="9" x="1.27" y="2.9464" dx="0.7366" dy="4.0132" layer="1"/>
+<smd name="10" x="1.27" y="-1.8669" dx="0.7366" dy="1.8542" layer="1"/>
+<smd name="11" x="2.54" y="2.9464" dx="0.7366" dy="4.0132" layer="1"/>
+<smd name="12" x="2.54" y="-1.8669" dx="0.7366" dy="1.8542" layer="1"/>
+<smd name="13" x="3.81" y="2.9464" dx="0.7366" dy="4.0132" layer="1"/>
+<smd name="14" x="3.81" y="-1.8669" dx="0.7366" dy="1.8542" layer="1"/>
+<text x="-2.032" y="5.334" size="0.762" layer="25">&gt;NAME</text>
+<text x="-2.159" y="-4.064" size="0.762" layer="27">&gt;VALUE</text>
+<circle x="-4.572" y="5.461" radius="0.179603125" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="3.683" x2="6.35" y2="3.683" width="0" layer="48"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FLE-107-01-XX-DV">
@@ -381,6 +401,27 @@
 </gates>
 <devices>
 <device name="" package="FLE-107-01-XX-DV">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="STLINK" package="ST_LINK_V3_DIRECT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -3391,7 +3432,7 @@ part number 2062-2P from STA</description>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="SW1" library="OPL_Switch" library_urn="urn:adsk.eagle:library:8004989" deviceset="SMD-BUTTON-TOP-DHT-4235A(4P-4.2X3.2MM)" device="" package3d_urn="urn:adsk.eagle:package:8005116/1" value="DHT-4235A"/>
-<part name="J2" library="FLE-107-01-XX-DV" deviceset="FLE-107-01-XX-DV" device=""/>
+<part name="J2" library="FLE-107-01-XX-DV" deviceset="FLE-107-01-XX-DV" device="STLINK" value="FLE-107-01-XX-DVSTLINK"/>
 <part name="CN1" library="2x7_DebugHeader" deviceset="2X7_DEBUG_HEADFER" device="" value="2X7_DEBUG_HEADFER"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SW2" library="OPL_Switch" library_urn="urn:adsk.eagle:library:8004989" deviceset="SMD-BUTTON-TOP-DHT-4235A(4P-4.2X3.2MM)" device="" package3d_urn="urn:adsk.eagle:package:8005116/1" value="DHT-4235A"/>
