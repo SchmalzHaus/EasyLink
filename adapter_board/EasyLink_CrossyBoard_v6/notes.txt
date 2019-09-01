@@ -1,0 +1,27 @@
+
+
+
+Version 4:
+Designed to solder directly on to ST-Link-V3-Mini (you have to remove the 14 pin connector from the Mini first)
+
+Has footprints for 14 pin edge connector, 14 pin SMD connector, and 6-pin EDT display board programming/debug connector
+
+Version 5:
+Renamed "Crossy Board" - Kraig's suggestion
+
+Made smaller by:
+* Removing 14 pin SMD connector, leaving only 14 pin edge connector as only connector
+* Removing 6-pin EDT display board programming/debug connector
+* Turning RESET and BOOT buttons 90 degrees
+* Moving RTS/CTS/5V/GND pins 
+
+This is as small as it's going to get
+Built up 18 with ST-Link-V3s. 
+
+Found one bug: (on both V4 and V5 crossy boards)
+* BOOT pin pulls down to GND rather than up to 3.3V
+
+(Reworked all V5 boards by cutting gnd thermals to BOOT pin (6 places), and running wire from target 3.3V to BOOT switch)
+
+Version 6:
+Exactly like V5 except BOOT pin now pulls up to target 3.3V
